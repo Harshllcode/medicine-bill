@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    width: 90vw;
+    height: 12vh;
+    margin: 3vh auto;
+}
+
+.bill-row {
+    display: grid;
+    grid-template-columns: 5vw 30vw 10vw 15vw 10vw 5vw 15vw;
+    border: 1px solid black;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.bill-row span {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid input {
+    width: 45vw;
+    height: 4vh;
+    border: 5px solid rgb(0, 0, 0);
+    color: black;
+    font-size: 3em;
+    overflow: hidden;
+    border-radius: 2vw;
+}
+
+.grid input:focus{
+    background-color: greenyellow;
+    color: black;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    margin: 2vw auto;
+    width: 20vw;
+    height: 5vw;
+    cursor: pointer;
+    column-gap: 5vw;
+}
+
+.submit {
+    background-color: rgb(204, 240, 43);
+    padding: 0.5vw 3vw;
+    border-radius: 5px;
+    width: 20vw;
+    height: 5vw;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+.buttons{
+    width: 60%;
+    height: 10vh;
+    margin: 1px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.sum{
+    width: 20%;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    width: 45%;
+    height: 60%;
+    font-size: 3vw;
+    border: 5px solid rgb(12, 12, 251);
+    background-color: rgb(235, 239, 186);
+    color: red;
+    text-transform: uppercase;
+}

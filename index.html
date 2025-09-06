@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>bill maker</title>
+    <link rel="stylesheet" href="mbill.css">
+</head>
+
+<body>
+    <div class="buttons">
+        <button class="reset-btn btn" onclick="resetBill()">Delete All</button>
+        <button class="last-row-btn btn" onclick="delete_row_last()">Last Delete</button>
+    </div>
+    <div class="main">
+        <div class="grid"><input type="text" class="rate" placeholder="price"></div>
+        <div class="grid"><input type="text" class="medicineName" placeholder="medicineName"></div>
+        <div class="grid"><input type="text" class="packing" placeholder="packing"></div>
+        <div class="grid"><input type="text" class="batchno" placeholder="batchno."></div>
+        <div class="grid"><input type="text" class="peti" placeholder="cartoon"></div>
+        <div class="grid"><input type="text" class="boxes-tube" placeholder="box or tube"></div>
+    </div>
+    <div class="submit-btn">
+        <button onclick="addList()" class="submit">submit</button>
+    </div>
+    <div class="container">
+        <div class="bill-row">
+            <span>S no.</span>
+            <span>Product Name</span>
+            <span>Batch No.</span>
+            <span>Packing</span>
+            <span>Quantity</span>
+            <span>Rate</span>
+            <span>Amount</span>
+        </div>
+        <div class="bill-body"></div>
+    </div>
+    <script src="mbill.js"></script>
+</body>
+
+</html>
