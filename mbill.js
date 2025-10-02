@@ -23,7 +23,7 @@ function addList() {
         packing: packing.toString().replaceAll(' ', 'x'),
         Quantity: qnt,
         rate: price,
-        amt: qnt * price
+        amt: Number((qnt * price).toFixed(2))
     })
     resetInput();
     saveItems();
@@ -104,3 +104,4 @@ function delete_row_last(){
     show_sum(); // 👈 total bhi refresh hoga
 
 }
+
