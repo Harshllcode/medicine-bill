@@ -70,7 +70,7 @@ function displayItems() {
         <span>${items.packing}</span>
         <span>${items.Quantity}</span>
         <span>${items.rate}</span>
-        <span>${items.amt}</span>
+        <span>${parseFloat(items.amt.toFixed(2))}</span>
     </div>`;
 
         body1.insertAdjacentHTML('beforeend', row)
@@ -80,7 +80,7 @@ function displayItems() {
 function show_sum() {
     let total = 0;    
     medicineDetails.forEach((items) => {
-        total += items.amt;
+        total += parseFloat(items.amt.toFixed(2));
     });
 
     // pehle purana total hatao (agar hai)
@@ -102,4 +102,5 @@ function delete_row_last(){
 
     displayItems();
     show_sum(); // 👈 total bhi refresh hoga
+
 }
