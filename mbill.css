@@ -98,4 +98,8 @@ body{
     background-color: rgb(235, 239, 186);
     color: red;
     text-transform: uppercase;
+
+}
+.container{
+    font-weight: 800;
 }
