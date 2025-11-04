@@ -1,7 +1,6 @@
 let medicineDetails = JSON.parse(localStorage.getItem('Product')) || [];
 let html = '';
 displayItems();
-show_sum();
 
 function addList() {
     let rate = document.querySelector('.rate').value;
@@ -76,7 +75,7 @@ function displayItems() {
 
         body1.insertAdjacentHTML('beforeend', row)
     });
-
+    show_sum();
 }
 function show_sum() {
     let total = 0;    
@@ -105,5 +104,6 @@ function delete_row_last(){
     show_sum(); // 👈 total bhi refresh hoga
 
 }
+
 
 
