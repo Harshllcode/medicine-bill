@@ -1,6 +1,7 @@
 let medicineDetails = JSON.parse(localStorage.getItem('Product')) || [];
 let html = '';
 displayItems();
+show_sum();
 
 function addList() {
     let rate = document.querySelector('.rate').value;
@@ -104,4 +105,5 @@ function delete_row_last(){
     show_sum(); // 👈 total bhi refresh hoga
 
 }
+
 
